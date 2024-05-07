@@ -1,0 +1,22 @@
+---
+import Layout from "@/layouts/Layout.astro";
+
+import Container from "@/components/Container.astro";
+import Header from "@/components/Header.astro";
+import Section from "@/components/Section.astro";
+
+import Awards from "@/sections/Awards.astro";
+import VideoHero from "@/sections/VideoHero.astro";
+---
+
+<Layout title="Home">
+  <main>
+    <Container>
+      <Header />
+      <VideoHero />
+    </Container>
+    <Section>
+      <Awards />
+    </Section>
+  </main>
+</Layout>

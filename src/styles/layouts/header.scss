@@ -1,0 +1,33 @@
+@import "./main.scss";
+
+.header {
+  @extend .l-full-width;
+  @extend .l-center-between;
+  padding: 70px 100px;
+  box-sizing: border-box;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 1rem;
+  color: white;
+  position: absolute;
+  z-index: 20;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  .nav__item {
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 0 2rem;
+  }
+}
+
+.menu {
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+}

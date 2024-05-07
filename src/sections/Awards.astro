@@ -1,0 +1,35 @@
+---
+import "@/styles/modules/awards.scss";
+
+const AWARDS = [
+  {
+    title: "Design and branding agency of the year",
+    image: "/logos/AdAge.svg",
+  },
+  {
+    title: "agency of the year",
+    image: "/logos/the-webby-awards.svg",
+  },
+  {
+    title: "digital innovation agency of the year finalist",
+    image: "/logos/campaign-logo.svg",
+  },
+];
+---
+
+<div class="awards">
+  <ul class="awards-list">
+    {
+      AWARDS.map(({ title, image }) => (
+        <li class="award-item">
+          <figure class="award-figure">
+            <img class="" src={image} alt={title} />
+          </figure>
+          <p class="award-p">{title}</p>
+        </li>
+      ))
+    }
+  </ul>
+  <div></div>
+  <div></div>
+</div>

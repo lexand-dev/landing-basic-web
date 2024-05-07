@@ -1,0 +1,39 @@
+@import "./../theme.scss";
+@import "./../variables.scss";
+
+.awards {
+
+}
+
+.awards-list {
+  display: flex;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  gap: 0 20px;
+}
+
+.award-item {
+  width: auto;
+  padding: 35px 0;
+  display: flex;
+  flex: 1 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .award-figure {
+    width: 80px;
+    height: 70px;
+    display: flex;
+    align-items: center
+  }
+  .award-p {
+    @extend .text-xs;
+    margin-top: 28px;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}

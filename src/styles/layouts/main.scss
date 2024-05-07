@@ -1,0 +1,40 @@
+@import './../variables.scss';
+.l-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.l-center-v {
+  display: flex;
+  align-items: center;
+}
+
+.l-center-h {
+  display: flex;
+  justify-content: center;
+}
+
+.l-center-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.l-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.l-column-center {
+  @extend .l-column;
+  justify-content: center;
+  align-items: center;
+} 
+
+.l-full-width {
+  width: 100%;
+}
+
+.l-full-height {
+  height: 100%;
+}
